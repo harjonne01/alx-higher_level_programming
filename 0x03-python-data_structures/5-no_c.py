@@ -3,5 +3,4 @@
 # function that removes all characters c and C from a string.
 
 def no_c(my_string):
-    New_str = my_string.replace('c', '').replace('C', '')
-    return (New_str)
+    return ''.join([char for char in my_string if char.lower() != 'c'])
